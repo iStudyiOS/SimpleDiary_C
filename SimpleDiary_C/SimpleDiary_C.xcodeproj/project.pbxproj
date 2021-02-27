@@ -21,6 +21,7 @@
 		D485B91E25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */; };
 		D485B92225EA78D900F55A55 /* CheckListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485B92025EA78D900F55A55 /* CheckListTableViewCell.swift */; };
 		D485B92325EA78D900F55A55 /* CheckListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D485B92125EA78D900F55A55 /* CheckListTableViewCell.xib */; };
+		EE5AC34425EA7E3A00D78574 /* FIrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewDateCell.xib; sourceTree = "<group>"; };
 		D485B92025EA78D900F55A55 /* CheckListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewCell.swift; sourceTree = "<group>"; };
 		D485B92125EA78D900F55A55 /* CheckListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTableViewCell.xib; sourceTree = "<group>"; };
+		EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D485B8F825EA747600F55A55 /* ViewController.swift */,
+				EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */,
 				D485B90D25EA762400F55A55 /* MonthlyViewController.swift */,
 				D485B91125EA770100F55A55 /* CheckListViewController.swift */,
 			);
@@ -198,6 +201,7 @@
 				D485B91825EA776300F55A55 /* Model.swift in Sources */,
 				D485B90E25EA762400F55A55 /* MonthlyViewController.swift in Sources */,
 				D485B91525EA773500F55A55 /* CalendarCollectionViewDataSource.swift in Sources */,
+				EE5AC34425EA7E3A00D78574 /* FIrstViewController.swift in Sources */,
 				D485B92225EA78D900F55A55 /* CheckListTableViewCell.swift in Sources */,
 				D485B8F925EA747600F55A55 /* ViewController.swift in Sources */,
 				D485B8F525EA747600F55A55 /* AppDelegate.swift in Sources */,
