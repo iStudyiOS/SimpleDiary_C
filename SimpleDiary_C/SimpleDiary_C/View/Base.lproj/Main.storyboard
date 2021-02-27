@@ -79,21 +79,86 @@
         <!--Item-->
         <scene sceneID="80Q-OT-Yrd">
             <objects>
-                <viewController id="63n-iE-Q47" sceneMemberID="viewController">
+                <viewController id="63n-iE-Q47" customClass="MonthlyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QAZ-xB-LBc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zUf-pr-w4G">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nDd-Ac-Ydn">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7cb-Gk-20t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zUf-pr-w4G" firstAttribute="leading" secondItem="7cb-Gk-20t" secondAttribute="leading" id="HsJ-nh-zly"/>
+                            <constraint firstItem="7cb-Gk-20t" firstAttribute="bottom" secondItem="zUf-pr-w4G" secondAttribute="bottom" id="SCM-er-Ecr"/>
+                            <constraint firstItem="zUf-pr-w4G" firstAttribute="trailing" secondItem="7cb-Gk-20t" secondAttribute="trailing" id="dl6-ia-9Iu"/>
+                            <constraint firstItem="zUf-pr-w4G" firstAttribute="top" secondItem="7cb-Gk-20t" secondAttribute="top" id="lZL-4D-tvu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="wt2-tH-29T"/>
+                    <connections>
+                        <outlet property="collectionView" destination="zUf-pr-w4G" id="tui-Ye-mfa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zig-hO-CBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1319" y="558"/>
         </scene>
+        <!--Check List View Controller-->
+        <scene sceneID="Og9-dZ-7ok">
+            <objects>
+                <viewController storyboardIdentifier="CheckListViewController" id="SPG-YU-nim" customClass="CheckListViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oRa-cu-wcB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gb-m7-FfP">
+                                <rect key="frame" x="0.0" y="64" width="414" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2f-JV-TZj">
+                                <rect key="frame" x="15" y="105.5" width="414" height="771.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6oc-Mn-RQ2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e2f-JV-TZj" firstAttribute="top" secondItem="4Gb-m7-FfP" secondAttribute="bottom" constant="15" id="IaH-zV-mIV"/>
+                            <constraint firstItem="6oc-Mn-RQ2" firstAttribute="trailing" secondItem="4Gb-m7-FfP" secondAttribute="trailing" id="RIx-1O-DsH"/>
+                            <constraint firstItem="e2f-JV-TZj" firstAttribute="bottom" secondItem="6oc-Mn-RQ2" secondAttribute="bottom" constant="15" id="Xch-24-GQ6"/>
+                            <constraint firstItem="4Gb-m7-FfP" firstAttribute="top" secondItem="6oc-Mn-RQ2" secondAttribute="top" constant="20" id="ZUw-Zd-m2Y"/>
+                            <constraint firstItem="e2f-JV-TZj" firstAttribute="leading" secondItem="6oc-Mn-RQ2" secondAttribute="leading" constant="15" id="lQ5-S5-CgH"/>
+                            <constraint firstItem="e2f-JV-TZj" firstAttribute="trailing" secondItem="6oc-Mn-RQ2" secondAttribute="trailing" constant="15" id="piP-mT-wHG"/>
+                            <constraint firstItem="4Gb-m7-FfP" firstAttribute="leading" secondItem="6oc-Mn-RQ2" secondAttribute="leading" id="vIm-nJ-SHk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="4Gb-m7-FfP" id="Ia4-Ie-g9E"/>
+                        <outlet property="tableView" destination="e2f-JV-TZj" id="DUq-4x-Gup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xx-la-0rz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="558"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bGq-eU-bwM" customClass="CheckListTableViewCell" customModule="CheckLog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bGq-eU-bwM" id="l82-em-3pv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKk-Wt-98d">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="jND-Ff-j4U"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgn-aW-Fk4">
+                        <rect key="frame" x="35" y="0.0" width="379" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tgn-aW-Fk4" firstAttribute="leading" secondItem="RKk-Wt-98d" secondAttribute="trailing" constant="15" id="miw-sm-fia"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="qSi-z2-5pD"/>
+            <constraints>
+                <constraint firstItem="qSi-z2-5pD" firstAttribute="bottom" secondItem="RKk-Wt-98d" secondAttribute="bottom" id="1W1-m9-XHq"/>
+                <constraint firstItem="RKk-Wt-98d" firstAttribute="top" secondItem="qSi-z2-5pD" secondAttribute="top" id="2MV-OE-oOX"/>
+                <constraint firstItem="tgn-aW-Fk4" firstAttribute="top" secondItem="qSi-z2-5pD" secondAttribute="top" id="7Zm-oX-90Y"/>
+                <constraint firstItem="RKk-Wt-98d" firstAttribute="leading" secondItem="qSi-z2-5pD" secondAttribute="leading" id="dHk-pk-R4u"/>
+                <constraint firstItem="qSi-z2-5pD" firstAttribute="bottom" secondItem="tgn-aW-Fk4" secondAttribute="bottom" id="kpp-cQ-ni2"/>
+                <constraint firstItem="qSi-z2-5pD" firstAttribute="trailing" secondItem="tgn-aW-Fk4" secondAttribute="trailing" id="quU-v6-Exv"/>
+            </constraints>
+            <connections>
+                <outlet property="colorView" destination="RKk-Wt-98d" id="zhH-ih-aT4"/>
+                <outlet property="contentLabel" destination="tgn-aW-Fk4" id="fpR-jw-cR9"/>
+            </connections>
+            <point key="canvasLocation" x="-668" y="200"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
