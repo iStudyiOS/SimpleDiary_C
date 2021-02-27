@@ -56,15 +56,47 @@
 		D485B8F325EA747600F55A55 /* SimpleDiary_C */ = {
 			isa = PBXGroup;
 			children = (
+				D485B90C25EA75EE00F55A55 /* Controller */,
+				D485B90B25EA75E800F55A55 /* View */,
+				D485B90A25EA75E400F55A55 /* Model */,
+				D485B90925EA75D700F55A55 /* Supporting Files */,
 				D485B8F425EA747600F55A55 /* AppDelegate.swift */,
 				D485B8F625EA747600F55A55 /* SceneDelegate.swift */,
-				D485B8F825EA747600F55A55 /* ViewController.swift */,
-				D485B8FA25EA747600F55A55 /* Main.storyboard */,
-				D485B8FD25EA747800F55A55 /* Assets.xcassets */,
-				D485B8FF25EA747800F55A55 /* LaunchScreen.storyboard */,
 				D485B90225EA747800F55A55 /* Info.plist */,
 			);
 			path = SimpleDiary_C;
+			sourceTree = "<group>";
+		};
+		D485B90925EA75D700F55A55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D485B8FD25EA747800F55A55 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D485B90A25EA75E400F55A55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D485B90B25EA75E800F55A55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D485B8FA25EA747600F55A55 /* Main.storyboard */,
+				D485B8FF25EA747800F55A55 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D485B90C25EA75EE00F55A55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D485B8F825EA747600F55A55 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
