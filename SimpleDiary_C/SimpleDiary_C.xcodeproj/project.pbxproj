@@ -23,6 +23,9 @@
 		D485B91E25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */; };
 		D485B92225EA78D900F55A55 /* CheckListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485B92025EA78D900F55A55 /* CheckListTableViewCell.swift */; };
 		D485B92325EA78D900F55A55 /* CheckListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D485B92125EA78D900F55A55 /* CheckListTableViewCell.xib */; };
+		E36C1AE125ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */; };
+		E36C1AE425ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */; };
+		E36C1AE725ECE58700F6D4F1 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */; };
 		EE5AC34425EA7E3A00D78574 /* FIrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewDateCell.xib; sourceTree = "<group>"; };
 		D485B92025EA78D900F55A55 /* CheckListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewCell.swift; sourceTree = "<group>"; };
 		D485B92125EA78D900F55A55 /* CheckListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTableViewCell.xib; sourceTree = "<group>"; };
+		E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewDataSource.swift; sourceTree = "<group>"; };
+		E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewDateCell.swift; sourceTree = "<group>"; };
+		E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
 		EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D485B91425EA773500F55A55 /* CalendarCollectionViewDataSource.swift */,
+				E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */,
 				D485B91725EA776300F55A55 /* Model.swift */,
 			);
 			path = Model;
@@ -110,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D485B8FA25EA747600F55A55 /* Main.storyboard */,
+				E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */,
 				D485B8FF25EA747800F55A55 /* LaunchScreen.storyboard */,
 				D485B91A25EA784200F55A55 /* CalendarCollectionViewDateCell.swift */,
 				D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */,
@@ -128,6 +136,7 @@
 				D485B91125EA770100F55A55 /* CheckListViewController.swift */,
 				0905F80625EA8BF900B2D6C9 /* DailyViewController.swift */,
 				0905F80925EA8CD400B2D6C9 /* EntryViewController.swift */,
+				E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D485B91825EA776300F55A55 /* Model.swift in Sources */,
+				E36C1AE125ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift in Sources */,
+				E36C1AE425ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift in Sources */,
+				E36C1AE725ECE58700F6D4F1 /* WeeklyViewController.swift in Sources */,
 				D485B90E25EA762400F55A55 /* MonthlyViewController.swift in Sources */,
 				0905F80725EA8BF900B2D6C9 /* DailyViewController.swift in Sources */,
 				D485B91525EA773500F55A55 /* CalendarCollectionViewDataSource.swift in Sources */,

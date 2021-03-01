@@ -51,7 +51,7 @@ class MonthlyViewController: UIViewController {
     }
 
 }
-
+// 셀 클릭 시 이벤트 처리
 extension MonthlyViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let date = dataSource.dummyData[indexPath.row]
@@ -60,7 +60,7 @@ extension MonthlyViewController: UICollectionViewDelegate {
         pullUpVC?.models = Array(date.checkList)
     }
 }
-
+// 셀 사이즈 고정
 extension MonthlyViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let oneSize = collectionView.frame.width / 7.0

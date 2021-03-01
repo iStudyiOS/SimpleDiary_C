@@ -8,6 +8,7 @@
 import UIKit
 
 class CheckListViewController: UIViewController {
+    
     static let identifier = String(describing: CheckListViewController.self)
     
     private enum State {
