@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0905F80725EA8BF900B2D6C9 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905F80625EA8BF900B2D6C9 /* DailyViewController.swift */; };
+		0905F80A25EA8CD400B2D6C9 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905F80925EA8CD400B2D6C9 /* EntryViewController.swift */; };
 		D485B8F525EA747600F55A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485B8F425EA747600F55A55 /* AppDelegate.swift */; };
 		D485B8F725EA747600F55A55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485B8F625EA747600F55A55 /* SceneDelegate.swift */; };
 		D485B8F925EA747600F55A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485B8F825EA747600F55A55 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0905F80625EA8BF900B2D6C9 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		0905F80925EA8CD400B2D6C9 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		D485B8F125EA747600F55A55 /* SimpleDiary_C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDiary_C.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D485B8F425EA747600F55A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D485B8F625EA747600F55A55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */,
 				D485B90D25EA762400F55A55 /* MonthlyViewController.swift */,
 				D485B91125EA770100F55A55 /* CheckListViewController.swift */,
+				0905F80625EA8BF900B2D6C9 /* DailyViewController.swift */,
+				0905F80925EA8CD400B2D6C9 /* EntryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 			files = (
 				D485B91825EA776300F55A55 /* Model.swift in Sources */,
 				D485B90E25EA762400F55A55 /* MonthlyViewController.swift in Sources */,
+				0905F80725EA8BF900B2D6C9 /* DailyViewController.swift in Sources */,
 				D485B91525EA773500F55A55 /* CalendarCollectionViewDataSource.swift in Sources */,
 				EE5AC34425EA7E3A00D78574 /* FIrstViewController.swift in Sources */,
+				0905F80A25EA8CD400B2D6C9 /* EntryViewController.swift in Sources */,
 				D485B92225EA78D900F55A55 /* CheckListTableViewCell.swift in Sources */,
 				D485B8F925EA747600F55A55 /* ViewController.swift in Sources */,
 				D485B8F525EA747600F55A55 /* AppDelegate.swift in Sources */,
