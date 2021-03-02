@@ -13,9 +13,9 @@ struct Model {
     var day: Int
     var checkList: Set<String> = {
         return Set((1...Int.random(in: 2...6)).map { _ in
-            let str = String([Character](repeating: "ABCEDF".randomElement()!, count: 10))
+            let str = ToDoDummyData.init().dummy.randomElement()!
             return str
         })
     }()
 }
-// ["일기쓰기","운동하기","
+

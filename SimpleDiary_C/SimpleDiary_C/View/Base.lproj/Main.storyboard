@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FIrstViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="홈" id="BYZ-38-t0r" customClass="FIrstViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                             <constraint firstItem="O0r-zJ-RGE" firstAttribute="top" secondItem="9nu-Si-4xv" secondAttribute="bottom" constant="30" id="oDe-f2-VHr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WkK-7O-8nr"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="homekit" catalog="system" id="WkK-7O-8nr"/>
                     <connections>
                         <outlet property="famousSaying" destination="cb5-Mj-Gbn" id="aeX-wE-a4c"/>
                         <outlet property="mainName" destination="KMZ-nI-pAK" id="v9g-Wl-WjZ"/>
@@ -136,18 +136,18 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="LdI-3M-kyZ"/>
                         <segue destination="U3h-ff-jDg" kind="relationship" relationship="viewControllers" id="kNc-aA-aLP"/>
-                        <segue destination="63n-iE-Q47" kind="relationship" relationship="viewControllers" id="u8J-Uz-yW2"/>
-                        <segue destination="UZ2-BX-238" kind="relationship" relationship="viewControllers" id="KBE-Yu-KZH"/>
+                        <segue destination="UZ2-BX-238" kind="relationship" relationship="viewControllers" id="R36-x8-Yq9"/>
+                        <segue destination="63n-iE-Q47" kind="relationship" relationship="viewControllers" id="WZO-Sa-I7g"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNp-wJ-dTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-317" y="202"/>
         </scene>
-        <!--Daily View Controller-->
+        <!--일간-->
         <scene sceneID="AZc-tv-i61">
             <objects>
-                <viewController id="EfO-dj-YR4" customClass="DailyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="일간" id="EfO-dj-YR4" customClass="DailyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zsf-2I-BUz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="2228.985507246377" y="-119.19642857142857"/>
         </scene>
-        <!--Entry View Controller-->
+        <!--일간 입력-->
         <scene sceneID="HSt-7w-fQn">
             <objects>
-                <viewController storyboardIdentifier="entry" id="R4c-Aw-84D" customClass="EntryViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" title="일간 입력" id="R4c-Aw-84D" customClass="EntryViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5K5-yj-MRm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="3052" y="-119"/>
         </scene>
-        <!--Item-->
+        <!--주간-->
         <scene sceneID="QmK-2i-VZA">
             <objects>
-                <viewController id="UZ2-BX-238" customClass="WeeklyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="주간" id="UZ2-BX-238" customClass="WeeklyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="avb-e6-MgS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,7 +314,7 @@
                             <constraint firstItem="UAG-7f-lQR" firstAttribute="bottom" secondItem="khg-I9-48k" secondAttribute="bottom" id="zj7-Kg-wUg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ArX-De-wnA"/>
+                    <tabBarItem key="tabBarItem" title="주간" image="book.closed" catalog="system" id="ArX-De-wnA"/>
                     <connections>
                         <outlet property="weekTitle" destination="BzB-mh-hcM" id="BpF-Y6-gQx"/>
                         <outlet property="weeklyTableView" destination="khg-I9-48k" id="vq9-vJ-dyb"/>
@@ -322,12 +322,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2v-lx-5RL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1318.840579710145" y="1364.7321428571429"/>
+            <point key="canvasLocation" x="1319" y="603"/>
         </scene>
-        <!--Item-->
+        <!--월간-->
         <scene sceneID="80Q-OT-Yrd">
             <objects>
-                <viewController id="63n-iE-Q47" customClass="MonthlyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="월간" id="63n-iE-Q47" customClass="MonthlyViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QAZ-xB-LBc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -353,19 +353,19 @@
                             <constraint firstItem="zUf-pr-w4G" firstAttribute="top" secondItem="7cb-Gk-20t" secondAttribute="top" id="lZL-4D-tvu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wt2-tH-29T"/>
+                    <tabBarItem key="tabBarItem" title="월간" image="calendar" catalog="system" id="wt2-tH-29T"/>
                     <connections>
                         <outlet property="collectionView" destination="zUf-pr-w4G" id="tui-Ye-mfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zig-hO-CBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1319" y="558"/>
+            <point key="canvasLocation" x="1319" y="1349"/>
         </scene>
-        <!--Check List View Controller-->
+        <!--월간 체크리스트-->
         <scene sceneID="Og9-dZ-7ok">
             <objects>
-                <viewController storyboardIdentifier="CheckListViewController" id="SPG-YU-nim" customClass="CheckListViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckListViewController" title="월간 체크리스트" id="SPG-YU-nim" customClass="CheckListViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oRa-cu-wcB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -400,13 +400,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xx-la-0rz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="558"/>
+            <point key="canvasLocation" x="2229" y="1349"/>
         </scene>
-        <!--Item-->
+        <!--일간-->
         <scene sceneID="LS6-yn-g0J">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U3h-ff-jDg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ih4-0c-bJe"/>
+                <navigationController title="일간" automaticallyAdjustsScrollViewInsets="NO" id="U3h-ff-jDg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="일간" image="checkmark.square" catalog="system" id="ih4-0c-bJe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EOQ-Oh-UB9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -423,6 +423,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="zoro" width="389.66665649414062" height="275.66665649414062"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

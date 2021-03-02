@@ -27,12 +27,11 @@ class FIrstViewController: UIViewController {
         let moveToDaily = UIAlertAction(title: "이동", style: .default) { (action) in
             guard let second = self.tabBarController?.viewControllers?[1] else { return }
             self.tabBarController?.selectedViewController = second
-            
         }
         
         let cancelAction = UIAlertAction(title: "취소", style: .cancel) { (action) in
                    
-            }
+        }
         
         alert.addAction(moveToDaily)
         alert.addAction(cancelAction)
@@ -74,7 +73,6 @@ class FIrstViewController: UIViewController {
             guard let forth = self.tabBarController?.viewControllers?[3] else { return }
             self.tabBarController?.selectedViewController = forth
             
-            
             }
 
         let cancelAction = UIAlertAction(title: "취소", style: .cancel) { (action) in
@@ -94,13 +92,18 @@ class FIrstViewController: UIViewController {
         
         
         let moveToPomodoro = UIAlertAction(title: "이동", style: .default) { (action) in
-
-            }
+            let cancelalert = UIAlertController(title: "준비중", message: "포모도로 타이머 기능은 준비중입니다.", preferredStyle: UIAlertController.Style.alert)
+            
+            let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+            
+            cancelalert.addAction(cancelAction)
+            self.present(cancelalert, animated: true, completion: nil)
+        }
 
     
         let cancelAction = UIAlertAction(title: "취소", style: .cancel) { (action) in
                    
-            }
+        }
         
        
         alert.addAction(cancelAction)
