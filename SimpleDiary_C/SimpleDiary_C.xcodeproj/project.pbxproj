@@ -26,6 +26,7 @@
 		E36C1AE125ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */; };
 		E36C1AE425ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */; };
 		E36C1AE725ECE58700F6D4F1 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */; };
+		E36C1AEE25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AED25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift */; };
 		EE5AC34425EA7E3A00D78574 /* FIrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewDataSource.swift; sourceTree = "<group>"; };
 		E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewDateCell.swift; sourceTree = "<group>"; };
 		E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
+		E36C1AED25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			children = (
 				D485B8FA25EA747600F55A55 /* Main.storyboard */,
 				E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */,
+				E36C1AED25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift */,
 				D485B8FF25EA747800F55A55 /* LaunchScreen.storyboard */,
 				D485B91A25EA784200F55A55 /* CalendarCollectionViewDateCell.swift */,
 				D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D485B91825EA776300F55A55 /* Model.swift in Sources */,
+				E36C1AEE25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift in Sources */,
 				E36C1AE125ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift in Sources */,
 				E36C1AE425ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift in Sources */,
 				E36C1AE725ECE58700F6D4F1 /* WeeklyViewController.swift in Sources */,

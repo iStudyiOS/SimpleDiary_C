@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeeklyTableViewDataSource: NSObject, UITableViewDataSource {
+class WeeklyTableViewDataSource: NSObject, UITableViewDataSource{
     
     // MARK: - Properties
     
@@ -57,6 +57,9 @@ class WeeklyTableViewDataSource: NSObject, UITableViewDataSource {
         } else {
             cell.dateLabel.textColor = .black
         }
+        
+        cell.configure(colors: dummyData[indexPath.row].checkList.sorted().compactMap({ colors[$0] }))
+    
         return cell
     }
     
@@ -92,6 +95,5 @@ class WeeklyTableViewDataSource: NSObject, UITableViewDataSource {
         let date = cal.date(from: comps)!
         return (cal.component(.day, from: date), cal.component(.weekday, from: date))
     }
-    
     
 }

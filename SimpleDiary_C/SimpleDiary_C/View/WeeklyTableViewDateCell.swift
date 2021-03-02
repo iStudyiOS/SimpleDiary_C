@@ -8,11 +8,21 @@
 import UIKit
 
 class WeeklyTableViewDateCell: UITableViewCell {
-    
     var colors: [UIColor] = []
-
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var weeklyCollectionView: UICollectionView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+//        contentView.translatesAutoresizingMaskIntoConstraints = false
+//        weeklyCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "weeklyCollectionCell")
+        weeklyCollectionView.delegate = self
+        weeklyCollectionView.dataSource = self
+    }
+    
+    func configure(colors: [UIColor]) {
+        self.colors = colors
+    }
     
 }
 
@@ -22,7 +32,7 @@ extension WeeklyTableViewDateCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "weeklyCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "weeklyCollectionCell", for: indexPath)
         cell.backgroundColor = colors[indexPath.row]
         cell.translatesAutoresizingMaskIntoConstraints = false
         cell.layer.cornerRadius = cell.frame.width / 3
