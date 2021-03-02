@@ -136,7 +136,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="LdI-3M-kyZ"/>
                         <segue destination="U3h-ff-jDg" kind="relationship" relationship="viewControllers" id="kNc-aA-aLP"/>
-                        <segue destination="UZ2-BX-238" kind="relationship" relationship="viewControllers" id="R36-x8-Yq9"/>
+                        <segue destination="wpF-7H-ZuX" kind="relationship" relationship="viewControllers" id="R36-x8-Yq9"/>
                         <segue destination="63n-iE-Q47" kind="relationship" relationship="viewControllers" id="WZO-Sa-I7g"/>
                     </connections>
                 </tabBarController>
@@ -234,7 +234,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="khg-I9-48k">
-                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="675"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weeklyCell" rowHeight="90" id="ukM-y9-ae5" customClass="WeeklyTableViewDateCell" customModule="SimpleDiary_C" customModuleProvider="target">
@@ -293,7 +293,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주간 할 일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzB-mh-hcM">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Tz9-eT-PII"/>
                                 </constraints>
@@ -314,7 +314,7 @@
                             <constraint firstItem="UAG-7f-lQR" firstAttribute="bottom" secondItem="khg-I9-48k" secondAttribute="bottom" id="zj7-Kg-wUg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="주간" image="book.closed" catalog="system" id="ArX-De-wnA"/>
+                    <navigationItem key="navigationItem" id="CeP-Cz-YbI"/>
                     <connections>
                         <outlet property="weekTitle" destination="BzB-mh-hcM" id="BpF-Y6-gQx"/>
                         <outlet property="weeklyTableView" destination="khg-I9-48k" id="vq9-vJ-dyb"/>
@@ -322,7 +322,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2v-lx-5RL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1319" y="603"/>
+            <point key="canvasLocation" x="2228.985507246377" y="602.67857142857144"/>
+        </scene>
+        <!--주간 세부사항-->
+        <scene sceneID="P19-iH-oup">
+            <objects>
+                <tableViewController storyboardIdentifier="weeklyDetailView" title="주간 세부사항" id="tSj-tz-GZl" customClass="WeeklyDetailViewController" customModule="SimpleDiary_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGV-Ze-Rle">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BwO-Cj-3bE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weeklyDetailCell" rowHeight="70" id="NgB-lb-RFA" customClass="WeeklyDetailTableViewCell" customModule="SimpleDiary_C" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NgB-lb-RFA" id="6ku-HV-7KL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-oT-rTS">
+                                            <rect key="frame" x="20" y="11" width="45" height="48"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할 일 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXr-Qi-ylU">
+                                            <rect key="frame" x="75" y="21" width="319" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6RI-oT-rTS" firstAttribute="leading" secondItem="6ku-HV-7KL" secondAttribute="leadingMargin" id="94B-dw-x6a"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="lXr-Qi-ylU" secondAttribute="bottom" constant="10" id="IgI-zo-zf9"/>
+                                        <constraint firstItem="lXr-Qi-ylU" firstAttribute="top" secondItem="6ku-HV-7KL" secondAttribute="topMargin" constant="10" id="Ljb-4B-jSq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="6RI-oT-rTS" secondAttribute="bottom" id="R68-bH-mkq"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="6RI-oT-rTS" secondAttribute="trailing" constant="329" id="SeB-k7-E52"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lXr-Qi-ylU" secondAttribute="trailing" id="VQd-K8-wZt"/>
+                                        <constraint firstItem="6RI-oT-rTS" firstAttribute="top" secondItem="6ku-HV-7KL" secondAttribute="topMargin" id="lFe-ql-vtn"/>
+                                        <constraint firstItem="lXr-Qi-ylU" firstAttribute="leading" secondItem="6RI-oT-rTS" secondAttribute="trailing" constant="10" id="zzw-SQ-hvs"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="colorView" destination="6RI-oT-rTS" id="Pev-7j-mVu"/>
+                                    <outlet property="todoLabel" destination="lXr-Qi-ylU" id="Fh7-c2-oUv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tSj-tz-GZl" id="1LM-K5-quj"/>
+                            <outlet property="delegate" destination="tSj-tz-GZl" id="UUo-RU-Lrb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WoU-c8-OOM"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="BwO-Cj-3bE" id="aPO-cz-y9V"/>
+                        <outlet property="weeklyTableView" destination="OGV-Ze-Rle" id="DmR-Gz-lTu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1k-om-cDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3139.130434782609" y="602.67857142857144"/>
         </scene>
         <!--월간-->
         <scene sceneID="80Q-OT-Yrd">
@@ -420,6 +486,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqG-zu-akV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1318.840579710145" y="-119.19642857142857"/>
+        </scene>
+        <!--주간-->
+        <scene sceneID="069-6n-cFs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wpF-7H-ZuX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="주간" image="book.closed" catalog="system" id="ArX-De-wnA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xdR-M9-V2r">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UZ2-BX-238" kind="relationship" relationship="rootViewController" id="DJt-fQ-4hM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxn-f5-AZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318.840579710145" y="602.67857142857144"/>
         </scene>
     </scenes>
     <resources>

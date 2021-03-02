@@ -26,8 +26,9 @@
 		E36C1AE125ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */; };
 		E36C1AE425ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */; };
 		E36C1AE725ECE58700F6D4F1 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */; };
-		E36C1AEE25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C1AED25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift */; };
 		E3F97DEB25EE1DD400AB01BF /* ToDoDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F97DEA25EE1DD400AB01BF /* ToDoDummyData.swift */; };
+		E3F97DEE25EE25FC00AB01BF /* WeeklyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F97DED25EE25FC00AB01BF /* WeeklyDetailViewController.swift */; };
+		E3F97DF325EE28C600AB01BF /* WeeklyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F97DF225EE28C600AB01BF /* WeeklyDetailTableViewCell.swift */; };
 		EE5AC34425EA7E3A00D78574 /* FIrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +54,9 @@
 		E36C1AE025ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewDataSource.swift; sourceTree = "<group>"; };
 		E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewDateCell.swift; sourceTree = "<group>"; };
 		E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
-		E36C1AED25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E3F97DEA25EE1DD400AB01BF /* ToDoDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDummyData.swift; sourceTree = "<group>"; };
+		E3F97DED25EE25FC00AB01BF /* WeeklyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeeklyDetailViewController.swift; path = SimpleDiary_C/Controller/WeeklyDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		E3F97DF225EE28C600AB01BF /* WeeklyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EE5AC34325EA7E3A00D78574 /* FIrstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +125,7 @@
 			children = (
 				D485B8FA25EA747600F55A55 /* Main.storyboard */,
 				E36C1AE325ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift */,
-				E36C1AED25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift */,
+				E3F97DF225EE28C600AB01BF /* WeeklyDetailTableViewCell.swift */,
 				D485B8FF25EA747800F55A55 /* LaunchScreen.storyboard */,
 				D485B91A25EA784200F55A55 /* CalendarCollectionViewDateCell.swift */,
 				D485B91D25EA785E00F55A55 /* CalendarCollectionViewDateCell.xib */,
@@ -143,6 +145,7 @@
 				0905F80625EA8BF900B2D6C9 /* DailyViewController.swift */,
 				0905F80925EA8CD400B2D6C9 /* EntryViewController.swift */,
 				E36C1AE625ECE58700F6D4F1 /* WeeklyViewController.swift */,
+				E3F97DED25EE25FC00AB01BF /* WeeklyDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,8 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D485B91825EA776300F55A55 /* Model.swift in Sources */,
-				E36C1AEE25ED127F00F6D4F1 /* WeeklyCollectionViewCell.swift in Sources */,
+				E3F97DEE25EE25FC00AB01BF /* WeeklyDetailViewController.swift in Sources */,
 				E36C1AE125ECDEB400F6D4F1 /* WeeklyTableViewDataSource.swift in Sources */,
+				E3F97DF325EE28C600AB01BF /* WeeklyDetailTableViewCell.swift in Sources */,
 				E36C1AE425ECE09700F6D4F1 /* WeeklyTableViewDateCell.swift in Sources */,
 				E36C1AE725ECE58700F6D4F1 /* WeeklyViewController.swift in Sources */,
 				D485B90E25EA762400F55A55 /* MonthlyViewController.swift in Sources */,
